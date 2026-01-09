@@ -1,0 +1,21 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root{
+--brand-root-color:#EF5F4C;
+--backgroun-color:#FFFFFF;
+--surface-color:#F5F5F5;
+--skeleton-color:#D9D9D9;
+--shape-transparent-color:#ffffff8f;
+--text-color-primary:#313131;
+--text-color-secondary:#6C6C6C;
+}
+
+body{
+  color:var(--text-color-secondary);
+  background-color: var(--backgroun-color);
+  
+}
