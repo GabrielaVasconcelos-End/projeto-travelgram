@@ -25,3 +25,11 @@ body{
   background-color: var(--backgroun-color);
 
 }
+a{
+  text-decoration: none;
+  color:inherit;
+}
+a:hover{
+  color:var(--brand-root-color);
+  text-decoration: underline;
+}
