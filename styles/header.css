@@ -1,20 +1,29 @@
 header {
-  padding-block:32px;
+  padding-block: 32px;
+  font: var(--text-md);
 }
 
-header .container {
+header .container{
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
 #profile {
-  display:flex;
-  gap:32px;
-}             
+  display: flex;
+  align-items: center;
+  gap: 32px;
+}
 
-#profile >div {
+#profile > div {
   max-width: 384px;
+}
+
+#profile img {
+  width: 176px;
+  height: 176px;
+  object-fit: cover;
+  border-radius: 50%;
 }
 
 #profile h1 {
@@ -22,23 +31,20 @@ header .container {
   color: var(--text-color-primary);
   margin-bottom: 8px;
 }
-
-
 #profile p {
   font: var(--text-md);
 }
 
 #info {
-  display:flex;
-  list-style: none;
+  display: flex;
   flex-direction: column;
-  gap:32px;
+  gap: 16px;
   width: 280px;
+  list-style: none;
 }
 
 #info li {
   display: flex;
   align-items: center;
-  gap:8px;
+  gap: 8px;
 }
-
