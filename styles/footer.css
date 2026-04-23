@@ -1,9 +1,18 @@
 footer {
   display: flex;
-  gap: 24px;
+  flex-direction: column;
+  gap: 16px;
   padding-block: 24px;
   font: 14px/150% var(--font-family);
 }
-footer span:nth-child(1) {
-  margin-right: auto;
+
+@media (min-width: 80em) {
+  footer {
+    flex-direction: row;
+    gap: 24px;
+  }
+
+  footer span:nth-child(1) {
+    margin-right: auto;
+  }
 }

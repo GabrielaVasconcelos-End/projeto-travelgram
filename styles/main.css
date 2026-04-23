@@ -1,12 +1,20 @@
 main {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 24px;
-  padding-block: 24px;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 16px;
+  padding-block: 16px;
 }
 
 main img {
-  width: 286px;
-  height: 286px;
+  width: 100%;
+  aspect-ratio: 1 / 1;
   object-fit: cover;
+}
+
+@media (min-width: 80em) {
+  main {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 24px;
+    padding-block: 24px;
+  }
 }
